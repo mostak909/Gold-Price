@@ -1,0 +1,30 @@
+body {
+margin: 0px;
+}
+section {
+padding: 30px;
+background-color: gray;
+}
+h2 {
+text-align: center;
+font-weight: bold;
+color: gold;
+}
+input { 
+text-align: center;
+border: 8px;
+padding: 20px;
+border-radius: 10px;
+border-color: gold;
+}
+button {
+text-align: center;
+border: 8px;
+padding: 20px;
+border-radius: 10px;
+border-color: gold;
+}
+
+#calculat {
+display: none;
+}
