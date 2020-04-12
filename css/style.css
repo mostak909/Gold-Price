@@ -1,30 +1,75 @@
 body {
-margin: 0px;
-}
-section {
-padding: 30px;
-background-color: gray;
-}
-h2 {
-text-align: center;
-font-weight: bold;
-color: gold;
-}
-input { 
-text-align: center;
-border: 8px;
-padding: 20px;
-border-radius: 10px;
-border-color: gold;
-}
-button {
-text-align: center;
-border: 8px;
-padding: 20px;
-border-radius: 10px;
-border-color: gold;
+    margin: 0px;
+    font-family: 'Gotu', sans-serif;
 }
 
-#calculat {
-display: none;
+section {
+    padding: 30px;
 }
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    color: gold;
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+    color: gold;
+    margin-top: 40px;
+    padding: 15;
+}
+
+h4 {
+    text-align: center;
+    font-weight: bold;
+    color: wheat;
+}
+
+input {
+    text-align: center;
+    border: 8px;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: gold;
+}
+
+button {
+    text-align: center;
+    border: 8px;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: gold;
+}
+
+.submit {
+    text-align: center;
+    background-color: gray;
+}
+
+.display-date {
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.display-rat {
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.info {
+    background-color: gold;
+    text-align: center;
+    font-weight: bold;
+}
+hr {
+    width: 400px;
+    color: red;
+}
+
+
+
+/* #calculat {
+display: none;
+} */
