@@ -1,52 +1,65 @@
 <!doctype html>
 <html>
- <head> 
-  <meta charset="UTF-8"> 
-  <title>Gold Price</title> 
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <meta name="author" content="Mostak"> 
-  <meta name="description" content="M2 Tech"> 
-  <meta name="keywords" content="programming hero, web playground"> 
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon"> 
-  <!--@bootstrapCss--> 
-  <link rel="stylesheet" href="css/bootstrap.min.css"> 
-  <!--custom css--> 
-  <link rel="stylesheet" href="css/style.css"> 
- </head> 
- <body> 
-  <iframe src="https://www.goldbroker.com/widget/live-price/XAU?currency=USD" width="100%" height="130" style="border: 0; overflow: hidden;"></iframe> 
-  <!--Gold-Price--> 
-  <section> 
-   <div id="login-area"> 
-    <h2> Gold Price Calculat </h2> 
-    <input type="number" id="price" class="form-control" placeholder="Put One Ounce Rat $">  
-    <br> 
-    <input type="number" id="currency" class="form-control" placeholder="Put your Currency Rat">  
-    <br> 
-    <button id="login" type="submit" class="form-control btn btn-success"> Check Now </button> 
-   </div> 
-  </section> 
-  <!--rate-display--> 
-  <section class="display-rat"> 
-   <div id="calculat"> 
-    <h2>Please Wait for calculation.....</h2> 
-   </div> 
-  </section> 
-  <!--main js--> 
-  <script>
-const loginBtn = document.getElementById("login");
-loginBtn.addEventListener("click", function(){
-const loginArea = document.getElementById("login-area");
-loginArea.style.display = "none";
+<head><meta charset="utf-8">
+	<title>Gold Price</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Mostak"><meta name="description" content="M2 Tech"><meta name="keywords" content="programming hero, web playground">
+	<link href="images/favicon.png" rel="shortcut icon" type="image/vnd.microsoft.icon" /><!--@bootstrapCss-->
+	<link href="css/bootstrap.min.css" rel="stylesheet" /><!--custom css-->
+	<link href="css/style.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Gotu&amp;display=swap" rel="stylesheet" />
+</head>
+<body>
+<p><iframe height="130" src="https://www.goldbroker.com/widget/live-price/XAU?currency=USD" style="border: 0; overflow: hidden;" width="100%"></iframe><!--Gold-Price--></p>
 
-const calculatRat = document.getElementById("calculat");
-calculatRat.style.display = "block";
-})
+<section class="submit container shadow p-3 mb-5 bg-gray rounded">
+<div id="submit-area">
+<h2>Gold Price Calculat</h2>
+<input class="form-control" id="price" placeholder="Put One Ounce Rate $ ضع سعر أونصة واحدة " type="number" /><br />
+<input class="form-control" id="currency" placeholder="Put your Currency Rate /  ضع عملتك هنا" type="number" /><br />
+<button class="form-control btn btn-success" id="submit" type="submit">Check Now</button></div>
+</section>
+<!--rate-display-->
 
+<section class="display-date container shadow p-3 mb-5 bg-gray rounded">
+<div id="calculat">
+<h4 id="date"></h4>
+</div>
+</section>
 
-</script>  
-  <footer> 
-   <p class="programminghero text-center">Learned and developed this site with <a href="http://www.programming-hero.com">Programming Hero</a></p> 
-  </footer>
- </body>
+<section class="display-rat container">
+<div id="calculat">
+<h3 id="24k"></h3>
+
+<h3 id="22k"></h3>
+
+<h3 id="21k"></h3>
+
+<h3 id="18k"></h3>
+
+<hr />
+<h3 id="tola22"></h3>
+
+<h3 id="tola21"></h3>
+</div>
+</section>
+
+<section class="container info shadow p-3 mb-5 bg-gold rounded">
+<h5>Get one ounce gold price to display top.</h5>
+
+<h5>احصل على سعر أونصة ذهب لعرضها في الأعلى.</h5>
+
+<h5>১ আউন্স সোনার দাম উপরে দেখতে পাবেন।</h5>
+</section>
+
+<footer>
+<p class="programminghero text-center">Learned and developed this site with <a href="http://www.programming-hero.com">Programming Hero</a></p>
+</footer>
+
+<footer>
+<p class="text-center">Designed <a href="">M2Tech-it</a> by Mostak Ahmed &copy; COPYRIGHT 2020 m2tec-IT.</p>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
 </html>
