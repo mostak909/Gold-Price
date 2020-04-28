@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gold Price</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mostak">
+    <meta name="description" content="M2 Tech">
+    <meta name="keywords" content="programming hero, web playground">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/vnd.microsoft.icon">
+    <!--@bootstrapCss-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--custom css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <iframe src="https://www.goldbroker.com/widget/live-price/XAU?currency=USD" width="100%" height="130" style="border: 0; overflow: hidden;"></iframe>
+    <!--Gold-Price-->
+    <section class="submit container shadow p-3 mb-5 bg-gray rounded">
+        <div id="submit-area">
+            <h2> Gold Price Calculat </h2>
+            <input type="number" id="price" class="form-control" placeholder="Put One Ounce Rat $ وضع سعر الذهب" required="">
+            <br>
+            <input type="number" id="currency" class="form-control" placeholder="Put your Currency Rat /  وضع عملتك هنا" required="">
+            <br>
+            <button id="submit" type="submit" class="form-control btn btn-success"> Check Now </button>
+        </div>
+    </section>
+    <!--rate-display-->
+    <section class="display-date container shadow p-3 mb-5 bg-white rounded">
+        <div id="calculat">
+
+
+
+            <h4 id="date"></h4>
+
+        </div>
+    </section>
+    <section class="price-cal container shadow p-3 mb-5 bg-orange rounded">
+        <div>
+
+            <h3 id="24k">See Gold rate here</h3>
+            <h3 id="22k"><img src="images/gold.png" alt=""></h3>
+            <h3 id="21k"></h3>
+            <h3 id="18k"></h3>
+            <hr>
+            <h3 id="tola22"></h3>
+            <h3 id="tola21"></h3>
+
+        </div>
+    </section>
+    <section class="container info shadow p-3 mb-5 bg-gold rounded">
+        <div class="info-1">
+            <a href="https://apkfab.com/gold-price-calculate/com.wGoldPrice_1/apk?h=4d5c644b3a661cdacace37f2bec03afbdd9399f6e96f1ed83bbe2a5cd1dd07a9"><img src="images/qr.png" alt="QR"></a>
+            <p><a href="https://apkfab.com/gold-price-calculate/com.wGoldPrice_1/apk?h=4d5c644b3a661cdacace37f2bec03afbdd9399f6e96f1ed83bbe2a5cd1dd07a9">Download Android App</a></p>
+        </div>
+        <div class="info-2">
+            <h5>Get one ounce gold price to display top.</h5>
+            <h5>احصل على سعر أونصة ذهب لعرضها في الأعلى.</h5>
+        </div>
+        <div class="info-3">
+           <!-- <h3><a href="https://m2tec-it.com/gold"></a>Open Web Link</h3> -->
+           <a href="https://m2tec-it.com/gold"><img src="images/link3.png" alt="Gold"></a>
+           <h4><a href="https://m2tec-it.com/gold">Open Web Link</a></h4>
+        </div>
+        
+    </section>
+    
+    <!--Price Calculet-->
+    <section class="price-cal container shadow p-3 mb-5 bg-orange rounded">
+        <div>
+            <h2> Price Calculat </h2>
+            <input type="number" id="unit" class="form-control" placeholder="Unit">
+            <br>
+            <input type="number" id="koto" class="form-control" placeholder="Price">
+            <br>
+            <input type="number" id="tex" class="form-control" placeholder="Tex %">
+            <br>
+            <button id="calculet-price" type="submit" class="form-control btn btn-success"> Calculet </button>
+        </div>
+    </section>
+    <!--Display Price-->
+    <section class="price-cal container shadow p-3 mb-5 bg-orange rounded">
+        <div>
+
+            <h3 id="totalPrice">Your Price:</h3>
+            <h3 id="totalTex">Your Tax:</h3>
+            <h3 id="netPrice">Total Price:</h3>
+
+
+        </div>
+    </section>
+
+    <footer>
+        <p class="programminghero text-center">Learned and developed this site with <a href="http://www.programming-hero.com">Programming Hero</a></p>
+    </footer>
+    <footer>
+        <p class="text-center">Designed <a href="">M2Tech-it</a> by Mostak Ahmed &copy COPYRIGHT 2020 m2tec-IT.</p>
+    </footer>
+    <!--main js-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
