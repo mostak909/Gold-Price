@@ -17,6 +17,12 @@ submitBtn.addEventListener("click", function() {
 
     const addCurrency = document.getElementById("currency").value;
     const addCurrencyAmount = Number(addCurrency);
+    if (addPrice <= 0) {
+        return alert("Put 1 Ounce price")  
+    }
+    if (addCurrency <= 0) {
+        return alert("Put your Currency Rat")
+    }
 
 
     var goldPrice24 = (addPriceAmount * addCurrencyAmount) / 31.1;
@@ -39,3 +45,36 @@ submitBtn.addEventListener("click", function() {
 var d = new Date();
 
 document.getElementById("date").innerHTML = d;
+
+// Price Calculate
+var calculetBtn = document.getElementById('calculet-price');
+calculetBtn.addEventListener('click', function() {
+    var unitAdd = document.getElementById('unit').value;
+    var unitAmountAdd = Number(unitAdd);
+    console.log(unitAmountAdd)
+
+    var priceAdd = document.getElementById('koto').value;
+    var priceAmountAdd = Number(priceAdd);
+    console.log(priceAmountAdd)
+    if (unitAdd <= 0) {
+        return alert("Unit Here")
+    }
+    else if (priceAdd <= 0) {
+        return alert("Price Here")  
+    }
+
+    var texAdd = document.getElementById('tex').value;
+    var texAmountAdd = Number(texAdd);
+   
+    var totalPrice = (unitAmountAdd * priceAmountAdd);
+    var totalTex = (totalPrice * texAmountAdd) / 100;
+
+    var netPrice = totalPrice + totalTex;
+
+
+    document.getElementById('totalPrice').innerHTML = "Price = " + totalPrice.toFixed(2);
+    document.getElementById('totalTex').innerHTML = "Tex = " + totalTex.toFixed(2);
+    document.getElementById('netPrice').innerHTML = "Total Price = " + netPrice.toFixed(2);
+
+
+})
